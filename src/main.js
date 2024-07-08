@@ -8,6 +8,8 @@ let currentQuery = '';
 
 const searchForm = document.querySelector('.js-form');
 const loadMoreBtn = document.querySelector('#load-more');
+const loader = document.querySelector('#loader');
+const gallery = document.querySelector('#gallery');
 
 searchForm.addEventListener('submit', handleSearch);
 async function handleSearch(event) {

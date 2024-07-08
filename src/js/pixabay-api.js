@@ -11,6 +11,9 @@ export async function getPicturesByQuery(query, page = 1) {
   try {
       const response = await axios.get(url);
     return response.data;
-  } catch (error) {console.log(error);
+  } catch (error) {iziToast.error({
+      title: 'Error',
+      message: 'Sorry, there are no images matching your search query. Please try again!',
+    });
   }
 }
